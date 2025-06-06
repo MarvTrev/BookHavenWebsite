@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Book Haven</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Book Haven Bookstore</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="custom.html" >Custom Page</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Story</h2>
+    <p>Book Haven Bookstore is a warm and welcoming place for anyone who loves books. 
+    Whether you’re into novels, magazines, journals, or just need some office supplies, 
+    there’s something here for you. It’s a small business with a big passion for reading 
+    and learning, and now it’s working on building an online presence to reach more people 
+    who share that love.
+    The goal of the bookstore’s website is to create a space that brings together book lovers, 
+    students, and curious minds. By going online, Book Haven hopes to make it easier for customers
+     to explore their wide selection, ask questions, and even place custom orders. They also want 
+     to make the website fun to browse, with a design that reflects the peaceful and inspiring 
+     feeling of reading a good book.
+     At its core, Book Haven Bookstore is all about celebrating literature and 
+     helping people grow intellectually. The new website is a step toward connecting with 
+     more readers, building a strong community, and making the bookstore’s unique charm available 
+     to anyone, anywhere.
+</p>
+<section class="hours">
+  <h2>Hours of Operation</h2>
+  <p>Monday–Friday: 9 a.m. to 8 p.m.</p>
+  <p>Saturday: 10 a.m. to 6 p.m.</p>
+  <p>Sunday: 11 a.m. to 5 p.m.</p>
+</section>
+   <hr style="margin: 50px 0;">
+
+<section id="contact-section">
+  <h2>Contact Us</h2>
+  <p>If you have any questions or want to reach us, please fill out the form below.</p>
+  
+  <form id="contactForm" onsubmit="handleContactForm(event)">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br />
+
+    <label for="phone">Phone Number:</label><br />
+    <input type="tel" id="phone" name="phone" /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="4" required></textarea><br />
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Book Haven Bookstore</p>
+  </footer>
+</body>
+</html>

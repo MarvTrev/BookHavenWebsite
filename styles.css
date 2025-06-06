@@ -1,0 +1,263 @@
+body {
+  font-family: Calibri, sans-serif;
+  background-color: #FFF7EE;
+  color: #131C26;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2E4057;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #FFF7EE;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2em;
+}
+
+.hero {
+  background-color: #F7B3CC;
+  padding: 2em;
+  text-align: center;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #C7B65E;
+  border: none;
+  padding: 0.5em 1em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F7B3CC;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.item {
+  background: white;
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #2E4057;
+  color: white;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.item {
+  background: white;
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #f9f7f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #2E4057; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #24425a;
+}
+
+body {
+  background-color: #fff7ee; 
+  color: #2E4057; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+}
+
+
+header, footer {
+  background-color: #2E4057;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  color: #f7b3cc; 
+}
+
+
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(46, 64, 87, 0.2);
+}
+
+
+form {
+  background-color: #f9f7f1; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #2E4057;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #24425a;
+}
+.cart-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cart-buttons button {
+  background-color: #C7B65E;
+  color: #2E4057;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cart-buttons button:hover {
+  background-color: #F7B3CC;
+}
+#customOrderForm {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #f9f7f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+#customOrderForm label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#customOrderForm input,
+#customOrderForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#customOrderForm button {
+  margin-top: 20px;
+  background-color: #2E4057;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#customOrderForm button:hover {
+  background-color: #24425a;
+}
+
