@@ -17,20 +17,19 @@
       <a href="custom.html" >Custom Page</a>
     </nav>
   </header>
-
   <main>
     <section class="hero">
       <h2>Welcome to Book Haven!</h2>
       <p>Your neighborhood source for stories, inspiration, and more.</p>
     </section>
-
-    <section class="newsletter">
-      <h3>Subscribe to Our Newsletter</h3>
-      <input type="email" id="email" placeholder="Enter your email">
-      <button onclick="subscribe()">Subscribe</button>
-    </section>
+   <section class="newsletter">
+  <h3>Subscribe to Our Newsletter</h3>
+  <form onsubmit="event.preventDefault(); subscribe();">
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
   </main>
-
   <footer>
     <p>&copy; 2025 Book Haven Bookstore</p>
   </footer>
