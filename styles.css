@@ -12,18 +12,15 @@ header {
   padding: 1em;
   text-align: center;
 }
-
 nav a {
   margin: 0 10px;
   color: #FFF7EE;
   text-decoration: none;
   font-weight: bold;
 }
-
 main {
   padding: 2em;
 }
-
 .hero {
   background-color: #F7B3CC;
   padding: 2em;
@@ -48,7 +45,6 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
 }
-
 .item {
   background: white;
   padding: 1em;
@@ -67,7 +63,6 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
 }
-
 .item {
   background: white;
   padding: 1em;
@@ -89,13 +84,11 @@ form {
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   font-family: Arial, sans-serif;
 }
-
 form label {
   font-weight: bold;
   margin-top: 10px;
   display: block;
 }
-
 form input, form textarea {
   width: 100%;
   padding: 8px;
@@ -116,11 +109,9 @@ form button {
   border-radius: 4px;
   cursor: pointer;
 }
-
 form button:hover {
   background-color: #24425a;
 }
-
 body {
   background-color: #fff7ee; 
   color: #2E4057; 
@@ -128,27 +119,21 @@ body {
   margin: 0;
   padding: 0 20px;
 }
-
-
 header, footer {
   background-color: #2E4057;
   color: white;
   padding: 15px 20px;
   text-align: center;
 }
-
 nav a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
-
 nav a.active, nav a:hover {
   color: #f7b3cc; 
 }
-
-
 main {
   max-width: 600px;
   margin: 30px auto;
