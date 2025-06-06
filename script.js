@@ -1,13 +1,14 @@
 function subscribe() {
-  const email = document.getElementById("email").value;
-  if (email) {
+  const email = document.getElementById("email").value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailRegex.test(email)) {
     sessionStorage.setItem("subscriberEmail", email);
     alert("Thanks for subscribing!");
   } else {
-    alert("Please enter a valid email.");
+    alert("Please enter a valid email address.");
   }
 }
-
 function addToCart(itemName) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push(itemName);
@@ -19,7 +20,6 @@ function handleContactForm(event) {
   event.preventDefault();
   alert("Thank you for your message! We'll be in touch.");
 }
-
 function handleOrder(event) {
   event.preventDefault();
   alert("Custom order submitted. Thank you!");
@@ -62,7 +62,6 @@ function addToCart(itemName) {
   localStorage.setItem("cart", JSON.stringify(cart));
   alert(`${itemName} added to cart.`);
 }
-
 function loadCartItems() {
   const cartList = document.getElementById("cartItems");
   if (!cartList) return;
