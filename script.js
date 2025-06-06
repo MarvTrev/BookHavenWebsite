@@ -9,6 +9,7 @@ function subscribe() {
     alert("Please enter a valid email address.");
   }
 }
+
 function addToCart(itemName) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push(itemName);
@@ -20,6 +21,7 @@ function handleContactForm(event) {
   event.preventDefault();
   alert("Thank you for your message! We'll be in touch.");
 }
+
 function handleOrder(event) {
   event.preventDefault();
   alert("Custom order submitted. Thank you!");
@@ -42,22 +44,30 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
-
       alert("Thank you for contacting us! We'll get back to you soon.");
-
-  
       contactForm.reset();
+    });
+  }
+
+  const customOrderForm = document.getElementById('customOrderForm');
+  if (customOrderForm) {
+    customOrderForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const orderDetails = this.orderDetails.value.trim();
+
+      if (!name || !email || !orderDetails) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      alert('Thank you, ' + name + '! Your custom order request has been received. We will contact you soon.');
+      this.reset();
     });
   }
 });
 
-
-function addToCart(itemName) {
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart.push(itemName);
-  localStorage.setItem("cart", JSON.stringify(cart));
-  alert(`${itemName} added to cart.`);
-}
 function loadCartItems() {
   const cartList = document.getElementById("cartItems");
   if (!cartList) return;
@@ -92,32 +102,19 @@ function processOrder() {
   sessionStorage.setItem("orderProcessed", "true");
   alert("Order successfully processed. Thank you!");
 }
+
 function clearCart() {
   localStorage.removeItem("cart");
-  document.getElementById("cartItems").innerHTML = "<li>Your cart is empty.</li>";
+  const cartItems = document.getElementById("cartItems");
+  if (cartItems) {
+    cartItems.innerHTML = "<li>Your cart is empty.</li>";
+  }
   alert("Cart has been cleared.");
 }
 
 window.onload = function () {
   loadCartItems();
 };
-const customOrderForm = document.getElementById('customOrderForm');
-if (customOrderForm) {
-  customOrderForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = this.name.value.trim();
-    const email = this.email.value.trim();
-    const orderDetails = this.orderDetails.value.trim();
-
-    if (!name || !email || !orderDetails) {
-      alert('Please fill in all required fields.');
-      return;
-    }
-    alert('Thank you, ' + name + '! Your custom order request has been received. We will contact you soon.');
-    
-    this.reset();
-  });
-}
 
 
 
